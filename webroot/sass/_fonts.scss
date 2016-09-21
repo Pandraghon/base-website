@@ -1,0 +1,21 @@
+@include font-face ('ubuntu',
+    font-files($font-path + 'ubuntu/UbuntuMono-R.ttf')
+);
+
+@include font-face ('ubuntu',
+    font-files($font-path + 'ubuntu/UbuntuMono-B.ttf'),
+    false,
+    bold, normal
+);
+
+@include font-face ('ubuntu',
+    font-files($font-path + 'ubuntu/UbuntuMono-RI.ttf'),
+    false,
+    normal, italic
+);
+
+@include font-face ('ubuntu',
+    font-files($font-path + 'ubuntu/UbuntuMono-BI.ttf'),
+    false,
+    bold, italic
+);

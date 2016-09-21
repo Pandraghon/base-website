@@ -1,0 +1,367 @@
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "ubuntu";
+  src: url('/fonts/../fonts/ubuntu/UbuntuMono-R.ttf') format('truetype');
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url('/fonts/../fonts/ubuntu/UbuntuMono-B.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url('/fonts/../fonts/ubuntu/UbuntuMono-RI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url('/fonts/../fonts/ubuntu/UbuntuMono-BI.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 3, ../sass/style.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../sass/style.scss */
+header {
+  width: 100%;
+  border-bottom: 3px solid #00c800;
+}
+/* line 11, ../sass/style.scss */
+header h1 {
+  font-size: 1.125em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* line 19, ../sass/style.scss */
+body {
+  background: black;
+  font-family: "ubuntu";
+}
+
+/* line 12, ../sass/_scrollbar.scss */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+/* line 17, ../sass/_scrollbar.scss */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 200, 0, 0.7);
+}
+
+/* line 21, ../sass/_scrollbar.scss */
+::-webkit-scrollbar-track {
+  background: rgba(0, 200, 0, 0.2);
+}
+
+/* line 26, ../sass/_scrollbar.scss */
+body {
+  scrollbar-face-color: rgba(0, 200, 0, 0.7);
+  scrollbar-track-color: rgba(0, 200, 0, 0.2);
+}
+
+/* line 26, ../sass/style.scss */
+a {
+  color: #00c800;
+}
+
+/* line 30, ../sass/style.scss */
+nav a {
+  text-decoration: none;
+}
+
+/* line 34, ../sass/style.scss */
+canvas {
+  display: block;
+  position: fixed;
+}
+
+/* line 39, ../sass/style.scss */
+.main-container {
+  position: absolute;
+  height: 90%;
+  width: 70%;
+  top: 5%;
+  left: 15%;
+  background: rgba(0, 5, 0, 0.8);
+  border: 3px solid #00c800;
+  border-radius: 10px / 5px;
+  color: #00c800;
+}
+
+/* line 51, ../sass/style.scss */
+.folder-container {
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #00c800;
+}
+/* line 56, ../sass/style.scss */
+.folder-container .folder-content {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+/* line 66, ../sass/style.scss */
+.folder-container .folder-element {
+  position: relative;
+  width: 105px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+        /*&:after {
+            content: '';
+            position: absolute;
+            width: 65px;
+            height: 45px;
+            top: 27px;
+            left: 20px;
+            background-color: rgba(0, 200, 0, .1);
+            @include box-sizing(border-box);
+            border: 1px solid rgb(0, 200, 0);
+            border-radius: 0 4px 4px 4px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 35%;
+            height: 8px;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 200, 0, .1);
+            @include box-sizing(border-box);
+            border: 1px solid rgb(0, 200, 0);
+            border-radius: 0 10px 0 0;
+        }*/
+}
+/* line 75, ../sass/style.scss */
+.folder-container .folder-element:hover {
+  background-color: rgba(0, 200, 0, 0.05);
+  border: 1px solid rgba(0, 200, 0, 0.3);
+}
+/* line 80, ../sass/style.scss */
+.folder-container .folder-element .folder-item {
+  display: block;
+  margin: auto;
+  font-size: 2.5em;
+}
+/* line 113, ../sass/style.scss */
+.folder-container .folder-navigation {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 3px 5px;
+  border: 1px solid #00c800;
+}
+/* line 121, ../sass/style.scss */
+.folder-container .folder-navigation:hover {
+  cursor: pointer;
+  background-color: #00c800;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 129, ../sass/style.scss */
+.accordion-body {
+  max-height: 0;
+  margin: 0 5px;
+  overflow: hidden;
+  -moz-transition: max-height 0.5s ease-out, margin 0.25s ease-out;
+  -o-transition: max-height 0.5s ease-out, margin 0.25s ease-out;
+  -webkit-transition: max-height 0.5s ease-out, margin 0.25s ease-out;
+  transition: max-height 0.5s ease-out, margin 0.25s ease-out;
+}
+
+/* line 136, ../sass/style.scss */
+.accordion-input {
+  display: none;
+}
+/* line 140, ../sass/style.scss */
+.accordion-input ~ .accordion-header .icon-active {
+  display: none;
+}
+/* line 143, ../sass/style.scss */
+.accordion-input ~ .accordion-header .icon-inactive {
+  display: inline-block;
+}
+/* line 150, ../sass/style.scss */
+.accordion-input:hover ~ .accordion-header .icon-active {
+  display: inline-block;
+}
+/* line 153, ../sass/style.scss */
+.accordion-input:hover ~ .accordion-header .icon-inactive {
+  display: none;
+}
+/* line 160, ../sass/style.scss */
+.accordion-input:checked ~ .accordion-body {
+  max-height: 1000px;
+  margin: 5px;
+  -moz-transition: max-height 1s ease-in, margin 0.25s ease-in;
+  -o-transition: max-height 1s ease-in, margin 0.25s ease-in;
+  -webkit-transition: max-height 1s ease-in, margin 0.25s ease-in;
+  transition: max-height 1s ease-in, margin 0.25s ease-in;
+}
+/* line 167, ../sass/style.scss */
+.accordion-input:checked ~ .accordion-header .icon-active {
+  display: inline-block;
+}
+/* line 170, ../sass/style.scss */
+.accordion-input:checked ~ .accordion-header .icon-inactive {
+  display: none;
+}
+/* line 177, ../sass/style.scss */
+.accordion-input:checked:hover ~ .accordion-header .icon-active {
+  display: none;
+}
+/* line 180, ../sass/style.scss */
+.accordion-input:checked:hover ~ .accordion-header .icon-inactive {
+  display: inline-block;
+}
+
+/* line 188, ../sass/style.scss */
+.window-container {
+  height: inherit;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* line 196, ../sass/style.scss */
+article:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+/* line 201, ../sass/style.scss */
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 202, ../sass/style.scss */
+h2:before {
+  content: '*';
+}
+
+/* line 210, ../sass/style.scss */
+h3:before {
+  content: '**';
+}
+
+/* line 215, ../sass/style.scss */
+.competence-group, .formation-group {
+  margin-top: 10px;
+}
+
+/* line 220, ../sass/style.scss */
+.competence-value:before {
+  content: '[';
+}
+/* line 223, ../sass/style.scss */
+.competence-value:after {
+  content: ']';
+}
+
+/* line 228, ../sass/style.scss */
+.line {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/*.line-icon {
+    width: 25px;
+    text-align: center;
+}*/
+/* line 238, ../sass/style.scss */
+.line-content {
+  -webkit-flex: 1;
+  flex: 1;
+}
